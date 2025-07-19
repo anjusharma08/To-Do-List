@@ -1,0 +1,35 @@
+.task-item {
+    margin-bottom: 10px; /* Slightly more space between items */
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow */
+    transition: transform 0.2s ease; /* Slight animation on hover */
+  }
+  
+  .task-item:hover {
+    transform: scale(1.02); /* Slight zoom on hover */
+  }
+  
+  .completed-task {
+    text-decoration: line-through;
+    cursor: pointer;
+  }
+  
+  .delete-button {
+    background-color: #ff4d4d;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .delete-button:hover {
+    background-color: #e63939;
+  }

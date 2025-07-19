@@ -1,0 +1,100 @@
+/* App container styling */
+.app-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #83a4d4, #b6fbff);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 12px 25px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+}
+
+/* Input container styling */
+.input-container {
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  display: flex;
+  padding: 10px;
+  gap: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+input {
+  flex: 1;
+  min-width: 240px;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  background-color: #ffffffcc;
+  transition: box-shadow 0.3s;
+}
+
+input:focus {
+  box-shadow: 0 0 0 3px #e2e2e099;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background: linear-gradient(145deg, #4caf50, #66bb6a);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(145deg, #388e3c, #43a047);
+  transform: translateY(-1px);
+}
+
+/* Task list styling */
+.task-list {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  max-width: 500px;
+}
+
+.task-list li {
+  background: #ffffffd9;
+  margin-bottom: 12px;
+  padding: 14px 18px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.task-list li:hover {
+  transform: translateY(-2px);
+}
+.todo-item span {
+  flex: 1;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.todo-item.completed span {
+  text-decoration: line-through;
+  color: #888;
+}
